@@ -12,6 +12,7 @@ const resetButton = document.getElementById('reset')
 
 startButton.addEventListener('click', startCounter)
 stopButton.addEventListener('click', stopCounter)
+
 resetButton.addEventListener('click', () => {
     count = 0
     stopCounter()
@@ -31,17 +32,6 @@ function stopCounter() {
     if(timerDiv.textContent !== '0') startButton.textContent = 'Resume'
     clearInterval(intervalID)
 }
-
-
-
-
-
-
-
-
-
-
-
 
 function counter() {
     debugger
